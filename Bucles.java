@@ -20,7 +20,8 @@ public class Bucles {
 		//Potencia();
 		//Fibonacci();
 		//Prueba();
-		NumerosPoN();
+		//NumerosPoN();
+		PotenciasYExponentes();
 		
 		
 		
@@ -338,7 +339,41 @@ public static void NumerosPoN() {
 
 //-------------------------------------------------------------END--------------------------------------------------------------------------
 
-
+public static void  PotenciasYExponentes() {
+	Scanner sc = new Scanner (System.in);
+	
+	
+	System.out.println("Ingresa la base: ");
+	int base=sc.nextInt();
+	int base1=base;
+	
+	System.out.println("Ingresa el Exponente: ");
+	int exponente = sc.nextInt();
+	int resultado=0;
+	int i=0;
+	
+	
+	
+	
+	while(exponente!=i) {
+		
+		resultado=base1;
+		i++;
+		System.out.println(base +" con exponente  "+ i +" = "+ resultado);
+		
+		base1 = base1 * base;
+		resultado=base1;
+		//resultado=base1*=base;
+		
+		
+		
+		
+	}
+	
+	
+	
+	sc.close();
+}
 
 
 
