@@ -18,8 +18,9 @@ public class Bucles {
 		//Primo();
 		//MediaDeNumeros();
 		//Potencia();
-		Fibonacci();
+		//Fibonacci();
 		//Prueba();
+		NumerosPoN();
 		
 		
 		
@@ -306,6 +307,42 @@ public static void Prueba() {
 }
 
 //----------------------------------------------------------------END-----------------------------------------------------------------------
+
+
+public static void NumerosPoN() {
+	
+	int nArray[]= {10,-20,15,-8,-18,13,-13};
+	int positivos = 0;
+	int negativos = 0;
+	
+	
+	
+	for(int i =0 ; i<nArray.length;i++){
+		
+		
+		if(nArray[i] < 0) {
+			negativos++;
+		}
+		
+		if(nArray[i]>0) {
+			positivos++;
+		
+		}
+			
+	}
+	
+	System.out.println("Los numeros positivos son: " + positivos);
+	System.out.println("Los numeros negativos son: " + negativos);
+
+}
+
+//-------------------------------------------------------------END--------------------------------------------------------------------------
+
+
+
+
+
+
 
 
 
