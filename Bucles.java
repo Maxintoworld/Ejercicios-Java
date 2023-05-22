@@ -276,25 +276,22 @@ public static void Potencia() {
 
 public static void Fibonacci() {
 	
-	int i=0;
-	int f=1;
+	int cero=0;
+	int uno=1;
 	int contador=0;
 
 do {
-	if (f>i) {
-		System.out.printf("%3d"+"%3d \n", i,f);
-		i++;
+	if (uno>cero) {
+		System.out.printf("%3d "+"%3d ", cero,uno);
+		cero = uno + cero;
+		uno = uno + cero;	
+		
 	}
 	
-	if(f==i) {
-		i+=f;
-	
-	
-	}
 	contador++;
 	
 	
-}while(contador<13);
+}while(contador<7);
 }
 
 
@@ -308,6 +305,7 @@ public static void Prueba() {
 			System.out.println(a);
 }
 
+//----------------------------------------------------------------END-----------------------------------------------------------------------
 
 
 
