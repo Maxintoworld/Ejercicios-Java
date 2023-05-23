@@ -21,7 +21,9 @@ public class Bucles {
 		//Fibonacci();
 		//Prueba();
 		//NumerosPoN();
-		PotenciasYExponentes();
+		//PotenciasYExponentes();
+		EsPositivoONegativo();
+		
 		
 		
 		
@@ -353,8 +355,6 @@ public static void  PotenciasYExponentes() {
 	int i=0;
 	
 	
-	
-	
 	while(exponente!=i) {
 		
 		resultado=base1;
@@ -362,18 +362,172 @@ public static void  PotenciasYExponentes() {
 		System.out.println(base +" con exponente  "+ i +" = "+ resultado);
 		
 		base1 = base1 * base;
-		resultado=base1;
+		resultado = base1;
 		//resultado=base1*=base;
-		
-		
 		
 		
 	}
 	
-	
-	
 	sc.close();
 }
+
+//--------------------------------------------------------------END-------------------------------------------------------------------------
+
+public static void EsPositivoONegativo() {
+
+	Scanner sc=new Scanner(System.in);
+
+
+
+	boolean cerrar=false;
+	int i =0;
+
+
+	while(!cerrar) {
+
+
+
+		if(i==0) {
+			System.out.println("ingresa el número");
+
+			int numero=sc.nextInt();
+			if(numero<0) {
+				System.out.print("El número es negativo, ");
+				cerrar=false;
+			}
+			if(numero>0 ) {
+
+				numero+=100;
+				System.out.println("el numero es: " + numero);
+				cerrar=true;
+				break;
+			}
+
+
+		}
+
+
+
+
+		if(i>0) {
+			System.out.println("ingresa el número nuevamente:");
+			int numero = sc.nextInt();
+			if(numero<0) {
+				System.out.print("El número es negativo, ");
+				cerrar=false;
+			}
+			if(numero>0 ) {
+
+				numero+=100;
+				System.out.println("el numero es: " + numero);
+				cerrar=true;
+				break;
+			}
+
+		}
+		i++;
+
+	}
+
+	sc.close();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
